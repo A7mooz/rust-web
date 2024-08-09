@@ -10,16 +10,21 @@ main p:first-of-type {
     font-size: 10rem;
     text-align: center;
     margin: auto;
+    padding-bottom: auto;
 }
 
 button {
-    width: 15em;
-    height: 5.5em;
+    width: 12rem;
+    height: 5rem;
     color: white;
     background-color: red;
-    font-size: large;
+    font-size: 2rem;
     border: none;
     border-radius: 20em;
+}
+
+button:hover {
+    background-color: rgb(255, 65, 65);
 }
 
 button:active {
@@ -27,16 +32,13 @@ button:active {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     font-size: 10em;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 15%;
-    margin: auto;
     text-align: center;
-    overflow: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .container * {
