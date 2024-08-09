@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Enable WASM
-        run: rustup target set wasm32-unknown-unknown
+        run: rustup target add wasm32-unknown-unknown
 
       - name: Install trunk
         run: cargo install trunk
