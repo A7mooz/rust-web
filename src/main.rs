@@ -27,11 +27,13 @@ impl Component for App {
 
     fn view(&self, ctx: &Context<Self>) -> Html {
         html! {
-            <div class={"container"}>
+            <main>
                 <p>{"Counter"}</p>
-                <p>{ self.value }</p>
-                <button onclick={ctx.link().callback(|_| Msg::AddOne)}>{ "+1" }</button>
-            </div>
+                <div class={"container"}>
+                    <p>{ self.value }</p>
+                    <button onclick={ctx.link().callback(|_| Msg::AddOne)}>{ "+1" }</button>
+                </div>
+            </main>
         }
     }
 }
